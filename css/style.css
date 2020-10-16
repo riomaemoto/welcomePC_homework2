@@ -1,0 +1,510 @@
+
+/*----------------------------------header-----------------------------*/
+header {
+	background-color: #1dace0;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px 0;
+	display: flex;
+	margin-top: -70px;
+	justify-content: space-between;
+}
+
+.icon img {
+	height: 60px;
+}
+
+
+.icon  {
+	display: flex;
+	align-items: center;
+	margin-left: 80px;
+}
+
+
+.icon .name strong {
+	color: #eae51f;
+	align-items: center;
+}
+
+
+.icon img {
+	height: 60px;
+}
+
+
+.header-right {
+	display: flex;
+	align-items: center;
+	margin-right: 80px;
+}
+
+
+.header-right li:first-child {
+	margin-right: 20px;
+}
+
+/*--------------------------headerここまで-----------------------------------*/
+/*-------------------------main ここから----------------------------------*/
+
+
+
+.input-field {
+	margin-left: 220px;
+	margin-bottom: 10px;
+	width: 600px;
+	height: 40px;
+	line-height: 40px;
+	box-sizing: border-box;
+}
+
+.otoiawase {
+	display: flex;
+	justify-content: center;
+	margin-left: 500px;
+	margin-bottom: 500px;
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+}
+
+
+#margin-for-fixed {
+	margin-top: 70px;
+}
+
+.welcome {
+	background-image: url(../img/background1.jpg);
+	height: 700px;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title{
+	font-size: 64px;
+}
+
+
+.guideline {
+	margin-top: 50px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+
+.guideline li {
+	margin-top: 16px;
+}
+
+
+.btn-group {
+	margin-top: 60px;
+}
+
+
+.btn {
+	width: 170px;
+	height: 55px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 28px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 120p
+}
+
+.btn:last-child {
+	margin-left: 100px;
+}
+
+.register {
+	background-color: rgba(29,172,224,.5);
+	border: 3px solid rgba(29,172,224,.3);
+}
+
+.register:hover {
+	background-color: rgba(29,172,224);
+}
+
+.login {
+	background-color: rgba(236,227,35,.5);
+	border: 3px solid rgba(236,227,35,.3);
+}
+
+.login:hover {
+	background-color: rgba(236,227,35);
+}
+
+
+/*--------------curriculum------------------------*/
+.curriculum {
+	margin-top: 50px;
+}
+
+.sub-title {
+	font-size: 36px;
+	text-align: center;
+}
+
+
+.img-box {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.img-box li img {
+	width: 300px;
+	height: 300px;
+}
+
+
+.img-box li {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-right: 60px;
+}
+
+
+.img-box li:last-child{
+	margin-right: 0;
+}
+
+.img-box li img {
+	width: 300px;
+	height: 300px;
+}
+
+
+.img-box li span{
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+/*---------curriculumここまで-----------*/
+
+/*--------contact-----------------*/
+
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: #ebf4f5;
+	margin-top: 50px;
+	height: 350px;
+}
+
+
+
+
+.form {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.form .name,.form .email {
+	height: 50px;
+	width: 400px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+
+
+
+.form .name {
+	margin-bottom: 20px;
+}
+
+
+
+.form-left {
+	margin-right: 50px;
+}
+
+
+
+.inquiry {
+	height: 120px;
+	width: 400px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+
+.contact .form {
+	margin: 50px 0 40px;
+}
+
+
+
+.contact button {
+	background-color: #1dace0;
+	color: #fff;
+	border: 3px solid #1dace0;
+	border-radius: 5px;
+	font-size: 24px;
+	padding: 15px 30px;
+	box-sizing: border-box;
+}
+
+/*----contact ここまで------*/
+
+/*-------footer-------------*/
+footer {
+	background-color: #233f51;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.footer-right {
+	margin-right: 80px;
+}
+
+/*-------- footer終わり ---------*/
+
+/*レシポンシブデザイン*/
+
+
+/*小型PC用*/
+@media screen and (max-width: 1280px) {
+
+.img-box li {
+	margin-right: 30px;
+}
+
+
+}
+
+/*タブレット*/
+@media screen and (max-width: 960px) {
+
+.welcome background-image {
+	width: 400px;
+}
+
+
+.contact {
+	height: 500px;
+}
+
+
+main .img-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+main li:last-child {
+	margin-top: 20px;
+}
+
+
+
+.contact .form {
+	flex-flow: column;
+}
+
+.contact .form-left {
+	margin-right: 0;
+}
+
+
+.contact .form-right {
+	margin-top: 20px;
+}
+
+.contact .form-left:first-child {
+	margin-top: 0;
+}
+
+
+form .sub-title {
+	padding-bottom: 20px;
+}
+
+}
+
+
+
+.contact button {
+	background-color: #1dace0;
+	color: #fff;
+	border: 3px solid #1dace0;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 5px 40px;
+	box-sizing: border-box;
+
+
+}
+
+/*スマフォ*/
+@media screen and (max-width: 480px){
+
+		body {
+		min-width: 375px;
+	}
+
+/*header*/
+.icon {
+	margin-left: 20px;
+}
+
+.icon .name {
+	display: none;
+}
+
+.header-right {
+	display: none;
+}
+
+/*welcome*/
+.title {
+	font-size: 30px;
+}
+
+.guideline {
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.btn-group {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.btn {
+	height: 48px;
+	width: 140px;
+	font-size: 24px;
+	margin-top: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.btn:last-child {
+	margin-left: 0;
+}
+
+.btn:first-child {
+	margin-top: 0;
+}
+
+/*curriculum*/
+.img-box {
+	flex-flow: column nowrap;
+}
+
+.img-box li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 0;
+	margin-top: 30px;
+}
+
+
+.img-box li:first-child {
+	margin-top: 0;
+}
+
+
+.img-box li span {
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+
+/*contact*/
+.contact .form {
+	flex-flow: column nowrap;
+	margin: 30px 0;
+}
+
+
+.form .name, .form .email, .form .inquiry {
+	width: 80%;
+}
+
+
+
+.form .name, .form .email, {
+	height: 30px;
+}
+
+
+
+.form .inquiry {
+	height: 50px;
+}
+
+
+
+.form-left {
+	margin-right: 0;
+}
+
+
+
+.form-right {
+	margin-top: 20px;
+}
+
+
+
+.contact button {
+	font-size: 20px;
+	padding: 5px 40px;
+}
+
+
+
+/*footer*/
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+
+footer .icon {
+	display: none;
+}
+
+
+footer .footer-right {
+	margin-right: 0;
+}
+
+
+
+
+
+}
+
+
+
+
+
