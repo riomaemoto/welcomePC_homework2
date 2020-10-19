@@ -1,42 +1,133 @@
 
 /*----------------------------------header-----------------------------*/
+
+body {
+	font-family: serif;
+}
+
+
 header {
-	background-color: #1dace0;
-	color: #fff;
+	color: black;
 	font-size: 18px;
 	padding: 5px 0;
 	display: flex;
+	height: 60px;
 	margin-top: -70px;
-	justify-content: space-between;
-}
-
-.icon img {
-	height: 60px;
-}
-
-
-.icon  {
 	display: flex;
-	align-items: center;
-	margin-left: 80px;
-}
-
-
-.icon .name strong {
-	color: #eae51f;
+	justify-content: center;
 	align-items: center;
 }
 
 
-.icon img {
+.header-icon {
+	margin-top: 8px;
+}
+
+
+
+
+header .icon {
+	margin-left: 90px;
+	padding-top: 20px;
+	color: black;
+	font-size: 30px;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.menu {
+	display: block;
+	overflow: hidden;
+	width: 60px;
 	height: 60px;
+	margin: 30px auto;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	        transition: all 0.5s ease-in-out;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	background-color: red;
 }
+.menu div.menubar {
+	width: 30px;
+	margin: 17px auto;
+}
+.menu div.menubar .bar {
+	display: block;
+	width: 100%;
+	height: 5px;
+	margin-top: 3px;
+	border-radius: 2px;
+	background-color: #ffffff;
+}
+.menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+	opacity: 0;
+}
+.menu ul li {
+	display: inline-block;
+}
+.menu ul li a {
+	display: inline-block;
+	padding: 0.7em 0.5em;
+	-webkit-transition: all 0.3s ease-in;
+	        transition: all 0.3s ease-in;
+	text-decoration: none;
+	color: red;
+	border-bottom: 4px solid transparent;
+	height: 56px;
+	line-height: 2em;
+}
+.menu ul li a:hover {
+	color: white;
+	background-color: red;
+}
+.menu ul li a:target {
+	border-bottom-color: red;
+}
+/* クリックした時の動き */
+#cp_navimenuid {
+	display: none;
+}
+#cp_navimenuid:checked ~ .menu {
+	width: 100%;
+	height: 60px;
+	border: 3px solid black;
+	border-radius: 5px;
+	background-color: transparent;
+}
+#cp_navimenuid:checked ~ .menu > ul {
+	display: block;
+	opacity: 1;
+}
+#cp_navimenuid:checked ~ .menu > .menubar {
+	display: none;
+}
+
+
+
+
+.name strong {
+	color: black;
+	align-items: center;
+}
+
 
 
 .header-right {
 	display: flex;
 	align-items: center;
 	margin-right: 80px;
+	color: red;
+	padding-top: 7px;
 }
 
 
@@ -76,8 +167,8 @@ header {
 }
 
 .welcome {
-	background-image: url(../img/background1.jpg);
-	height: 700px;
+	background-image: url(https://www.jalan.net/jalan/img/9/kuchikomi/1139/KL/b9759_0001139080_1.jpg);
+	height: 800px;
 	color: #fff;
 	text-align: center;
 	display: flex;
@@ -88,14 +179,18 @@ header {
 }
 
 .title{
-	font-size: 64px;
+	font-size: 70px;
+	font-family: serif;
+	padding-bottom: 80px;
 }
 
 
 .guideline {
-	margin-top: 50px;
+	margin-top: 0px;
 	font-size: 28px;
 	font-weight: bold;
+	color: black;
+	background-color: 
 }
 
 
@@ -120,22 +215,24 @@ header {
 	margin-left: 120p
 }
 
+
+
 .btn:last-child {
 	margin-left: 100px;
 }
 
 .register {
-	background-color: rgba(29,172,224,.5);
-	border: 3px solid rgba(29,172,224,.3);
+	background-color: rgba(255,0,0,.4);
+	border: 3px solid rgba(255,0,0,.2);
 }
 
 .register:hover {
-	background-color: rgba(29,172,224);
+	background-color: red;
 }
 
 .login {
-	background-color: rgba(236,227,35,.5);
-	border: 3px solid rgba(236,227,35,.3);
+	background-color: rgba(236,227,35,.6);
+	border: 3px solid rgba(236,227,35,.2);
 }
 
 .login:hover {
@@ -144,6 +241,10 @@ header {
 
 
 /*--------------curriculum------------------------*/
+
+
+
+
 .curriculum {
 	margin-top: 50px;
 }
@@ -158,13 +259,11 @@ header {
 	margin-top: 50px;
 	display: flex;
 	justify-content: center;
+	margin-left: 45px;
 }
 
 
-.img-box li img {
-	width: 300px;
-	height: 300px;
-}
+
 
 
 .img-box li {
@@ -172,27 +271,48 @@ header {
 	flex-direction: column;
 	text-align: center;
 	margin-right: 60px;
+	justify-content: space-around;
 }
 
 
-.img-box li:last-child{
-	margin-right: 0;
-}
-
-.img-box li img {
-	width: 300px;
-	height: 300px;
+.audio {
+	padding-right: 100px;
 }
 
 
-.img-box li span{
-	font-size: 24px;
-	margin-top: 10px;
+
+.audio {
+	color: red;
 }
+
+
+.video {
+	color: red;
+}
+
+
+.audio span {
+	color: black;
+}
+
+
+
+.video span {
+	color: black;
+}
+
+
+
 
 /*---------curriculumここまで-----------*/
 
+
+
 /*--------contact-----------------*/
+
+
+
+
 
 
 .contact{
@@ -237,6 +357,9 @@ header {
 
 
 
+
+
+
 .inquiry {
 	height: 120px;
 	width: 400px;
@@ -261,28 +384,51 @@ header {
 	box-sizing: border-box;
 }
 
+
+
+
+
+
 /*----contact ここまで------*/
 
+
+
+
 /*-------footer-------------*/
+
+
+
+
 footer {
 	background-color: #233f51;
 	color: #fff;
 	font-size: 18px;
-	padding: 5px 0;
+	padding: 5px;
 	display: flex;
-	justify-content: space-between;
+}
+
+
+
+.copyright {
+	display: flex;
 	align-items: center;
 }
 
 
 
-.footer-right {
-	margin-right: 80px;
-}
 
-/*-------- footer終わり ---------*/
 
-/*レシポンシブデザイン*/
+
+
+
+/*-------- footer終わり ----------------------------------------*/
+
+
+
+
+
+
+/*----------------レシポンシブデザイン-----------------------*/
 
 
 /*小型PC用*/
@@ -366,12 +512,23 @@ form .sub-title {
 	}
 
 /*header*/
+
+
+.welcome {
+	height: 500px;
+}
+
+header .icon {
+	margin-left: 20px;
+}
+
 .icon {
 	margin-left: 20px;
 }
 
 .icon .name {
-	display: none;
+	font-size: 20px;
+	padding-bottom: 5px;
 }
 
 .header-right {
@@ -379,12 +536,23 @@ form .sub-title {
 }
 
 /*welcome*/
+
+
+.guideline li {
+	font-size: 15px;
+}
+
+
+
+
+
 .title {
 	font-size: 30px;
+	padding-bottom: 50px;
 }
 
 .guideline {
-	margin-top: 30px;
+	padding-top: -300px;
 	font-size: 24px;
 	font-weight: normal;
 }
@@ -432,6 +600,19 @@ form .sub-title {
 }
 
 
+
+.img-box .audio {
+	padding-left: 60px;
+}
+
+
+
+.img-box .video {
+	padding-right: 39px;
+}
+
+
+
 .img-box li span {
 	margin-top: 20px;
 	font-size: 16px;
@@ -464,8 +645,11 @@ form .sub-title {
 
 
 .form-left {
-	margin-right: 0;
+	margin-right: 0px;
 }
+
+
+
 
 
 
@@ -477,7 +661,8 @@ form .sub-title {
 
 .contact button {
 	font-size: 20px;
-	padding: 5px 40px;
+	padding: 8px 40px;
+	margin-top: 10px;
 }
 
 

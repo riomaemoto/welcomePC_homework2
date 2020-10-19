@@ -8,50 +8,59 @@
 	<title>Speak Native Japanese!</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/ea16a6c69f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<!-------------------- header --------------------------->
 	<header class="fixed">
-			<!-- header 左側 -->
-			<div class="icon">
-				<img src="img/seedkun.png">
-				<span class="name"><strong>Seed</strong>Kun</span>
 			</div>
 			<!-- header 右側 -->
-			<ul class="header-right">
-				<li>新規登録</li>
-				<li>ログイン</li>
+			<ul class="header-icon">
+				<input type="checkbox" id="cp_navimenuid">
+					<label class="menu" for="cp_navimenuid">
+
+					<div class="menubar">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+
+					<ul>
+						<li><a id="home" href="#home">Home</a></li>
+						<li><a id="about" href="#about">Login</a></li>
+						<li><a id="contact" href="#contact">Sing up</a></li>
+						<li><a id="free" href="#free">free content</a></li>
+					</ul>
+
+					</label>
 	</header>
 	<!------------------ headerここまで ----------------------->
 	<!------------------ main welcome 始まり ----------------->
 	<main class="welcome" id="margin-for-fixed">
-		<h1 class="title">Welcome to Nexseed Okinawa</h1>
+		<i class="fas fa-graduation-cap fa-10x"></i>
+		<h1 class="title">Welcome to Japanese <br>master class</h1>
 		<ul class="guideline">
-			<li>Be Athlete</li>
-			<li>Go World</li>
-			<li>Enjoy Everything</li>
+			<li>This class will get your japanese speaking skill to the next level</li>
+			<li>You'll learn lots of casual way to speak japanese, but not text book japanese that no one realy use.</li>
+			<li></li>
 		</ul>
 		<div class="btn-group">
-			<button class="btn register">新規登録</button>
-			<button class="btn login">ログイン</button>
+			<button class="btn register">Sign up</button>
+			<button class="btn login">login</button>
 		</div>
 	</main>
 	<!------------------- welcome ここまで --------------->
 	<!------------------- curriculum --------------->
 	<main class="curriculum">
-		<h2 class="sub-title">NexSeed Life</h2>
+		<h2 class="sub-title">How to learn</h2>
 		<ul class="img-box">
-			<li>
-				<img src="img/programming.jpg">
-				<span>Programing</span>
+			<li class="audio">
+				<i class="fas fa-headphones fa-5x"></i>
+				<span>Audio</span>
 			</li>
-			<li>
-				<img src="img/english.jpg">
-				<span>English</span>
-			</li>
-			<li>
-				<img src="img/enjoy.jpg">
-				<span>Enjoy</span>
+			<li class="video">
+				<i class="fas fa-film fa-5x"></i>
+				<span>video</span>
 			</li>
 		</ul>
 	</main>
@@ -64,15 +73,15 @@
 				<!----------- 左 --------->
 				<div class="form-left">
 					<fieldset>
-						<input type="text" class="name" placeholder="お名前">
+						<input type="text" class="name" placeholder="Name">
 					</fieldset>
 					<fieldset>
-						<input type="email" class="email" placeholder="メールアドレス">
+						<input type="email" class="email" placeholder="Email">
 					</fieldset>
 				</div>
 				<!--------- 右 ------------>
 				<div class="form-right">
-					<textarea class="inquiry" placeholder="お問い合わせ内容"></textarea>
+					<textarea class="inquiry" placeholder="Ask any question"></textarea>
 				</div>
 			</div>
 			<button>submit</button>
@@ -80,12 +89,8 @@
 	</aside>
 	<footer>
 		<!-- -------------footer 左側----------- -->
-		<div class="icon">
-				<img src="img/seedkun.png">
-				<span class="name"><strong>Seed</strong>Kun</span>
-			</div>
 		<!-- -------------footer 右側----------- -->
-		<p class="footer-right">Copyright &copy; by Seedkun</p>
+		<p class="Copyright">Copyright &copy; by Leo</p>
 		<!-- -------- &copy;でコピーライトマーク ---------- -->
 	</footer>
 </body>
